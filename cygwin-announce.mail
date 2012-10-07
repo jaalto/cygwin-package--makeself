@@ -1,25 +1,32 @@
 To: cygwin-announce@cygwin.com
-Subject: Updated: package N.N
-Subject: New package: package N.N -- decription
+Subject: New package: makeself 2.1.5-1 -- Utility to generate self-extractable archives
 --text follows this line--
 
 PACKAGE DESCRIPTION
 ===================
 
-Homepage:
-License : GPL
+Homepage: http://www.megastep.org/makeself
+License : GPL-2+
 
-<write description here>
+A small utility to generate a self-extractable archive from a
+directory. The resulting file appears as a shell script (many of those
+have a .run suffix), and can be launched as is. The archive will then
+uncompress itself to a temporary directory and an optional arbitrary
+command will be executed (for example an installation script). This is
+pretty similar to archives generated with WinZip Self-Extractor in the
+Windows world. Makeself archives also include checksums for integrity
+self-validation (CRC and/or MD5 checksums).
+
 
 CHANGES SINCE LAST RELEASE
 ==========================
 
-<Add this section if this is update>
+See homepage for release notes.
 
 INSTALL OR UPGRADE NOTES
 ========================
 
-<if anything to watch out>
+Standard install.
 
 CYGWIN INSTALLATION INFORMATION
 ===============================

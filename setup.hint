@@ -1,10 +1,11 @@
-# See http://cygwin.com/setup.html   The 'category' can be:
-# Accessibility Admin Archive Audio Base Comm Database Devel Doc Editors
-# Games Gnome Graphics Interpreters Libs Mail Math Mingw Net Perl Python
-# Publishing Security Shells System Text Utils Web X11
-sdesc: ""
-ldesc: ""
-category: name [name...]
-requires: [package...]
-external-source: package
-conflicts:
+sdesc: "Utility to generate self-extractable archives"
+ldesc: "A small utility to generate a self-extractable archive from a
+directory. The resulting file appears as a shell script (many of those
+have a .run suffix), and can be launched as is. The archive will then
+uncompress itself to a temporary directory and an optional arbitrary
+command will be executed (for example an installation script). This is
+pretty similar to archives generated with WinZip Self-Extractor in the
+Windows world. Makeself archives also include checksums for integrity
+self-validation (CRC and/or MD5 checksums)."
+category: Archive
+requires: bzip2
