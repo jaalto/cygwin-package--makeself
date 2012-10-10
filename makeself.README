@@ -13,9 +13,10 @@ Windows world. Makeself archives also include checksums for integrity
 self-validation (CRC and/or MD5 checksums).
 
 Runtime requirements:
-  tar
   bzip2
-  gzip
+  coreutils
+  sharutils
+  gnupg
 
 Build requirements:
   cygwin
@@ -66,8 +67,27 @@ Files included in the binary distribution:
 
 Port Notes:
 
------ version 2.1.5-1 -----
-- Initial release 2012-10-07 Jari Aalto
+----- version 2.1.5-3 -----
+- New maintainer 2012-10-07 Jari Aalto
+
+----- makeself-2.1.5-3 -- wed apr 28 21:04:33 CEST 2010
+- Executable files have had their .sh extensions stripped.
+- makeself-header moved out of /usr/bin into /usr/share/makeself.
+- makeself-2.1.5-3.cygport file modified accordingly.
+- Added postinstall.sh to clean up in case a previous installation exists.
+- README file updated using script provided with upstream sources.
+- makeself.README modified, requirements now include updated versions.
+- Thanks Lee D. Rothstein and Eric Blake for the suggestions.
+- Reference: http://cygwin.com/ml/cygwin/2010-04/msg00992.html
+
+------ makeself-2.1.5-2 -- mon apr 19 22:31:57 CEST 2010
+- Minor changes in makeself.README.
+- Included valid signatures.
+
+------ makeself-2.1.5-1 -- web apr 14 20:04:52 CEST 2010
+- makeself-2.1.5-1.cygport provided by Yaakov Selkowitz.
+- Many thanks to Steven Monai and Yaakov Selkowitz for their help with this
+  release.
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
 Copyright (C) 2012 Jari Aalto; Licensed under GPL v2 or later
