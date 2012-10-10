@@ -22,8 +22,14 @@ AtExit ()
 
 Run ()
 {
-    echo "$*"
-    shift
+    if [ "$1" ]; then		# Empty message, just command to run
+	echo "$*"
+	shift
+    else
+	shift
+	echo "$*"
+    fi
+
     eval "$@"
 }
 
@@ -31,10 +37,11 @@ trap AtExit 0 1 2 3 15
 
 # #######################################################################
 
+dir="$TMPBASE.dir"
 archive="$TMPBASE-archive.run"
 
-mkdir -p "$TMPBASE.dir"
-( cd "$TMPBASE" && touch example.sh 1 2 3 ; chmod 755 start.sh )
+mkdir -p "$dir"
+( cd "$dir" && touch example.sh 1 2 3 ; chmod 755 *.sh )
 
 Run "%% TEST create:" makeself \
  --nowait \
@@ -42,10 +49,10 @@ Run "%% TEST create:" makeself \
  --nocrc \
  --nox11 \
  --nocomp \
- "$TMPBASE" "$archive" label echo
+ "$dir" "$archive" archive-label echo
 
-ls -la "$archive"
-file "$archive"
+Run "" ls -la "$archive"
+Run "" file "$archive"
 
 Run "%% TEST run:" "$archive"
 
