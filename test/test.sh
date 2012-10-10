@@ -44,7 +44,6 @@ Run "%% TEST create:" makeself \
  --nocomp \
  "$TMPBASE" "$archive" label echo
 
-pwd
 ls -la "$archive"
 file "$archive"
 
