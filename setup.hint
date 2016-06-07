@@ -1,3 +1,4 @@
+# ARCH=noarch
 sdesc: "Utility to generate self-extractable archives"
 ldesc: "A small utility to generate a self-extractable archive from a
 directory. The resulting file appears as a shell script (many of those
