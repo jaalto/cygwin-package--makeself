@@ -10,3 +10,4 @@ Windows world. Makeself archives also include checksums for integrity
 self-validation (CRC and/or MD5 checksums)."
 category: Archive
 requires: bzip2
+license: GPL-2.0-or-later
