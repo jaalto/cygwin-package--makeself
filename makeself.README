@@ -22,9 +22,10 @@ Build requirements:
   cygwin
 
 Canonical homepage:
-  http://www.megastep.org/makeself
-  http://directory.fsf.org/wiki/makeself
-  http://packages.debian.org/makeself
+  https://makeself.io
+  https://directory.fsf.org/wiki/Makeself
+  https://packages.debian.org/makeself
+  https://stephanepeter.com
 
 Canonical download:
   See above
@@ -66,6 +67,9 @@ Files included in the binary distribution:
 ------------------------------------------
 
 Port Notes:
+
+----- version 2.5.0+20240821+gitbccc0e4-1 -----
+- New upstream release 2025-02-06 Jari Aalto
 
 ----- version 2.5.0+20240418+gitaffe5e3-1 -----
 - New upstream release 2024-04-25 Jari Aalto
@@ -109,4 +113,4 @@ Port Notes:
   release.
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2012-2024 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2012-2025 Jari Aalto; Licensed under GPL v2 or later
